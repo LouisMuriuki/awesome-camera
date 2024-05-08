@@ -13,9 +13,27 @@
         {
           "origin": "https://n"
         }
+      ],
+      [
+        "react-native-vision-camera",
+        {
+          "cameraPermissionText": "$(PRODUCT_NAME) needs access to your Camera.",
+          "enableMicrophonePermission": true,
+          "microphonePermissionText": "$(PRODUCT_NAME) needs access to your Microphone."
+        }
       ]
     ],
     "name": "awesome-app",
-    "slug": "awesome-app"
+    "slug": "awesome-app",
+    "experiments": {
+      "typedRoutes": true
+    },
+    "android": {
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.muriuki.awesomeapp"
+    }
   }
 }
